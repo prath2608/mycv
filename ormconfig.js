@@ -25,11 +25,11 @@ switch (process.env.NODE_ENV) {
         break;
     case 'production':
         Object.assign(dbConfig,{
-            type: 'sqlite',
+             type: 'sqlite',
             database:'db.sqlite',
-            migrationsRun:true,
-            entities:['**/*.entity.ts'],
-            
+            entities:['**/*.entity.js'],
+            migrationsRun:true
+              
         });
         break;
     default:
