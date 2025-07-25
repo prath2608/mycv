@@ -1,0 +1,52 @@
+###create a new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+ "email":"asdk2@asdf.com",
+    "password": "asdf",
+    "admin":true
+}
+
+
+###sign in a user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email":"asdk2@asdf.com",
+    "password": "asdf",
+    "admin":true
+}
+
+
+###sign out a user
+POST http://localhost:3000/auth/signout
+Content-Type: application/json
+
+{}
+
+###
+GET http://localhost:3000/auth/whoami
+Content-Type: application/json
+
+###get all users
+GET http://localhost:3000/auth/29
+Content-Type: application/json
+
+###hjyfujyf
+GET http://localhost:3000/auth
+Content-Type: application/json
+
+###
+DELETE http://localhost:3000/auth/1
+
+
+####update user
+PATCH http://localhost:3000/auth/2
+Content-Type: application/json
+
+{
+  "email": "Parth@gmail.com"
+}
+
